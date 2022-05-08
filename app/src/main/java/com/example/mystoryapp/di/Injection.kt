@@ -5,8 +5,6 @@ import com.example.mystoryapp.database.StoriesDatabase
 import com.example.mystoryapp.network.ApiConfig
 import com.example.mystoryapp.repository.StoryRepository
 
-
-
 object Injection {
     fun provideRepository(context: Context) : StoryRepository {
         val database = StoriesDatabase.getDatabase(context)

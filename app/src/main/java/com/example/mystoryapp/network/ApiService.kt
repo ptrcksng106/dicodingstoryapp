@@ -26,7 +26,7 @@ interface ApiService {
     ): Call<com.example.mystoryapp.models.response.LoginResponse>
 
     @GET("stories")
-    fun getStories(
+    suspend fun getStories(
         @Header("Authorization") token: String,
         @Query("page") page: Int,
         @Query("size") size: Int
