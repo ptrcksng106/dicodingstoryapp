@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MyStoryApp</string>
+    <string name="email">Email</string>
+    <string name="hint_password">Enter your Password</string>
+    <string name="password">Password</string>
+    <string name="hint_email">Enter your Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Nama</string>
+    <string name="hint_name">Enter your Name Here</string>
+    <string name="register">register</string>
+    <string name="do_you_already_have_account">do you already have account?</string>
+    <string name="click_here_to_sign_up">Click here to sign up</string>
+    <string name="welcome_enjoy">Welcome!</string>
+    <string name="log_out">Logout</string>
+    <string name="lorem">loremipsum</string>
+    <string name="camera">Camera</string>
+    <string name="galery">Galery</string>
+    <string name="description">Description</string>
+    <string name="upload">Upload</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="maps">Maps</string>
+    <string name="retry">Coba lagi</string>
+</resources>
