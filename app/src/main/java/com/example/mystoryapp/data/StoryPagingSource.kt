@@ -7,17 +7,13 @@ import com.example.mystoryapp.network.ApiService
 import java.lang.Exception
 
 
-class StoryPagingSource(private val apiService: ApiService,private val token:String): PagingSource<Int, ListStoryItem>() {
-
-
-    private companion object {
-        const val INITIAL_PAGE_INDEX = 1
-    }
+class StoryPagingSource(private val apiService: ApiService, private val token: String) :
+    PagingSource<Int, ListStoryItem>() {
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, ListStoryItem> {
         return try {
             val page = params.key ?: INITIAL_PAGE_INDEX
-            val responseData = apiService.getStories(token,page,params.loadSize)
+            val responseData = apiService.getStories(token, page, params.loadSize)
 
 
             LoadResult.Page(
@@ -25,7 +21,7 @@ class StoryPagingSource(private val apiService: ApiService,private val token:Str
                 prevKey = if (page == INITIAL_PAGE_INDEX) null else page - 1,
                 nextKey = if (responseData.listStory.isNullOrEmpty()) null else page + 1
             )
-        } catch (exception : Exception) {
+        } catch (exception: Exception) {
             return LoadResult.Error(exception)
         }
     }
@@ -35,5 +31,9 @@ class StoryPagingSource(private val apiService: ApiService,private val token:Str
             val anchorPage = state.closestPageToPosition(anchorPostion)
             anchorPage?.prevKey?.plus(1) ?: anchorPage?.nextKey?.minus(1)
         }
+    }
+
+    private companion object {
+        const val INITIAL_PAGE_INDEX = 1
     }
 }

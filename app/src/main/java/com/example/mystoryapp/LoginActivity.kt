@@ -34,12 +34,6 @@ class LoginActivity : AppCompatActivity() {
 
         setupView()
 
-//        val loginViewModel = ViewModelProvider(
-//            this, ViewModelProvider.NewInstanceFactory()
-//        ).get(LoginViewModel::class.java)
-//        loginViewModel.isLoading.observe(this, {
-//            showLoading(it)
-//        })
         setupViewModel()
         setupAction()
     }

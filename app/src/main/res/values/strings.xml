@@ -22,4 +22,8 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="maps">Maps</string>
     <string name="retry">Coba lagi</string>
+    <string name="display_login">Tampilan Login</string>
+    <string name="display_register">Tampilan Register</string>
+    <string name="display_welcome">Tampilan Welcome</string>
+    <string name="edit_text">Password yang anda masukkan kurang dari 6</string>
 </resources>

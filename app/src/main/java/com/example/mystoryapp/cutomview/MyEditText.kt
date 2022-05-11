@@ -62,7 +62,7 @@ class MyEditText : AppCompatEditText {
             override fun onTextChanged(password: CharSequence, p1: Int, p2: Int, p3: Int) {
                 if (password.length < 6 || password.isEmpty()) {
                     setButtonDrawables(endOfTheText = warningButtonImage)
-                    error = "Password yang anda masukkan kurang dari 6"
+                    error = "@string/edit_text"
                 } else {
                     setButtonDrawables()
                 }

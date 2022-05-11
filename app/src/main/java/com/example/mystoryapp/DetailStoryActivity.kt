@@ -25,10 +25,7 @@ class DetailStoryActivity : AppCompatActivity() {
         binding = ActivityDetailStoryBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         setupAction()
-
-
     }
 
     private fun setupAction() {
@@ -41,9 +38,9 @@ class DetailStoryActivity : AppCompatActivity() {
         val bundle = Bundle()
         bundle.putString(EXTRA_NAME, name)
 
-        val image_url = intent.getStringExtra(EXTRA_URL_IMAGE)
+        val imageUrl = intent.getStringExtra(EXTRA_URL_IMAGE)
         val bundle2 = Bundle()
-        bundle2.putString(EXTRA_URL_IMAGE, image_url)
+        bundle2.putString(EXTRA_URL_IMAGE, imageUrl)
 
         val description = intent.getStringExtra(EXTRA_DESCRIPTION)
         val bundle3 = Bundle()
@@ -54,28 +51,14 @@ class DetailStoryActivity : AppCompatActivity() {
             detailStoryViewModel.getDetailStory("Bearer ${it.token}")
 
             Glide.with(this)
-                .load(image_url)
+                .load(imageUrl)
                 .centerCrop()
                 .into(binding.imgDetailStory)
 
             binding.tvDescriptionDeatailStory.text = description
 
             binding.tvNameDetailStory.text = name
-//            detailStoryViewModel.getTheDetailStory().observe(this) {
-//                if (it != null) {
-//                    Glide.with(this)
-//                        .load(it.photoUrl)
-//                        .centerCrop()
-//                        .into(binding.imgDetailStory)
-//
-//                    binding.tvNameDetailStory.text = it.name
-//
-//                    binding.tvDescriptionDeatailStory.text = it.description
-//                }
-//            }
         })
-
-
     }
 
     companion object {
