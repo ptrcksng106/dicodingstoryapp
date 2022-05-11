@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.menu -> {
                 mainViewModel.logout()
-
+                finish()
                 val i = Intent(this, WelcomeActivity::class.java)
                 startActivity(i)
                 return true
