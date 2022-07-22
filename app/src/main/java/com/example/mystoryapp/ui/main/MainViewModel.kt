@@ -1,4 +1,4 @@
-package com.example.mystoryapp.viewmodel
+package com.example.mystoryapp.ui.main
 
 import androidx.lifecycle.*
 import com.example.mystoryapp.models.UserModel

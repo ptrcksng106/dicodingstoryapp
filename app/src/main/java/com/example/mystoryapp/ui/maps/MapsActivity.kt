@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui.maps
 
 import android.Manifest
 import android.content.Context
@@ -13,14 +13,14 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.example.mystoryapp.R
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.example.mystoryapp.databinding.ActivityMapsBinding
-import com.example.mystoryapp.models.UserModel
 import com.example.mystoryapp.models.UserPreference
-import com.example.mystoryapp.viewmodel.MapsViewModel
+import com.example.mystoryapp.ui.ViewModelFactory
 import com.google.android.gms.maps.model.*
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")

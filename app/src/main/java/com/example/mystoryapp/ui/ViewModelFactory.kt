@@ -1,10 +1,13 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.mystoryapp.models.UserPreference
-import com.example.mystoryapp.repository.StoryRepository
-import com.example.mystoryapp.viewmodel.*
+import com.example.mystoryapp.ui.detail.DetailStoryViewModel
+import com.example.mystoryapp.ui.login.LoginViewModel
+import com.example.mystoryapp.ui.main.MainViewModel
+import com.example.mystoryapp.ui.maps.MapsViewModel
+import com.example.mystoryapp.ui.register.RegisterViewModel
 
 class ViewModelFactory(
     private val pref: UserPreference

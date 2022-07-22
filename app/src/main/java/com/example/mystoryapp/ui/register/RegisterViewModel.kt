@@ -1,4 +1,4 @@
-package com.example.mystoryapp.viewmodel
+package com.example.mystoryapp.ui.register
 
 
 import android.util.Log

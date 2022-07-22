@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui.add
 
 import android.Manifest
 import android.content.Context
@@ -28,7 +28,9 @@ import com.example.mystoryapp.databinding.ActivityAddStoryBinding
 import com.example.mystoryapp.models.UserPreference
 import com.example.mystoryapp.models.response.LoginResponse
 import com.example.mystoryapp.network.ApiConfig
-import com.example.mystoryapp.viewmodel.LoginViewModel
+import com.example.mystoryapp.ui.ViewModelFactory
+import com.example.mystoryapp.ui.login.LoginViewModel
+import com.example.mystoryapp.ui.main.MainActivity
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -83,7 +85,6 @@ class AddStoryActivity : AppCompatActivity() {
 
         binding.btnAddStoryCamera.setOnClickListener {
             startCameraX()
-            //startTakePhoto()
         }
 
         binding.btnAddStoryGalery.setOnClickListener { startGallery() }
@@ -148,12 +149,6 @@ class AddStoryActivity : AppCompatActivity() {
             getFile = myFile
 
             val result = BitmapFactory.decodeFile(myFile.path)
-//            Silakan gunakan kode ini jika mengalami perubahan rotasi
-//            val result = rotateBitmap(
-//                BitmapFactory.decodeFile(myFile.path),
-//                true
-//            )
-
             binding.previewImageView.setImageBitmap(result)
         }
     }

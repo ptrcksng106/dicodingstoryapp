@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui.login
 
 import android.content.Context
 import android.content.Intent
@@ -14,10 +14,12 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.example.mystoryapp.ui.main.MainActivity
+import com.example.mystoryapp.ui.register.RegisterActivity
+import com.example.mystoryapp.ui.ViewModelFactory
 import com.example.mystoryapp.databinding.ActivityLoginBinding
 import com.example.mystoryapp.models.UserModel
 import com.example.mystoryapp.models.UserPreference
-import com.example.mystoryapp.viewmodel.LoginViewModel
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 

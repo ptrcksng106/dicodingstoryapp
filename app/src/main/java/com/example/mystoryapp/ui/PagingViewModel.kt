@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui
 
 import android.content.Context
 import androidx.lifecycle.LiveData

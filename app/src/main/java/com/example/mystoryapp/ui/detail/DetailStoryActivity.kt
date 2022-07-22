@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui.detail
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.mystoryapp.databinding.ActivityDetailStoryBinding
 import com.example.mystoryapp.models.UserPreference
-import com.example.mystoryapp.viewmodel.DetailStoryViewModel
+import com.example.mystoryapp.ui.ViewModelFactory
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 

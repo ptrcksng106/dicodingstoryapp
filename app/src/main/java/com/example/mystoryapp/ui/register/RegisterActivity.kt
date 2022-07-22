@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui.register
 
 import android.content.Context
 import android.content.Intent
@@ -16,7 +16,8 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.mystoryapp.databinding.ActivityRegisterBinding
 import com.example.mystoryapp.models.UserModel
 import com.example.mystoryapp.models.UserPreference
-import com.example.mystoryapp.viewmodel.RegisterViewModel
+import com.example.mystoryapp.ui.ViewModelFactory
+import com.example.mystoryapp.ui.login.LoginActivity
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 
@@ -31,14 +32,6 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-//        val registerViewModel = ViewModelProvider(
-//            this,
-//            ViewModelProvider.NewInstanceFactory()
-//        ).get(RegisterViewModel::class.java)
-//        registerViewModel.isLoading.observe(this, {
-//            showLoading(it)
-//        })
 
         setupView()
         setupViewModel()

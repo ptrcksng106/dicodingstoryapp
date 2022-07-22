@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui.welcome
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -16,7 +16,11 @@ import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.example.mystoryapp.databinding.ActivityWelcomeBinding
 import com.example.mystoryapp.models.UserPreference
-import com.example.mystoryapp.viewmodel.MainViewModel
+import com.example.mystoryapp.ui.ViewModelFactory
+import com.example.mystoryapp.ui.login.LoginActivity
+import com.example.mystoryapp.ui.main.MainActivity
+import com.example.mystoryapp.ui.main.MainViewModel
+import com.example.mystoryapp.ui.register.RegisterActivity
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 

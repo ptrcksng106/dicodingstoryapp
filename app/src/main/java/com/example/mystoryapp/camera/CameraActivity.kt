@@ -13,7 +13,7 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import com.example.mystoryapp.AddStoryActivity
+import com.example.mystoryapp.ui.add.AddStoryActivity
 import com.example.mystoryapp.databinding.ActivityCameraBinding
 import java.lang.Exception
 import java.util.concurrent.ExecutorService

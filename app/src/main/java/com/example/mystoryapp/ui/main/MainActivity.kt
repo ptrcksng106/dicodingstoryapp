@@ -1,4 +1,4 @@
-package com.example.mystoryapp
+package com.example.mystoryapp.ui.main
 
 
 import android.content.Context
@@ -14,11 +14,17 @@ import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
 import com.example.mystoryapp.databinding.ActivityMainBinding
 import com.example.mystoryapp.models.UserPreference
-import com.example.mystoryapp.viewmodel.MainViewModel
+import com.example.mystoryapp.ui.main.MainViewModel
 import androidx.activity.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mystoryapp.R
 import com.example.mystoryapp.adapter.LoadingStateAdapter
 import com.example.mystoryapp.adapter.StoriesAdapter
+import com.example.mystoryapp.ui.PagingViewModel
+import com.example.mystoryapp.ui.ViewModelFactory
+import com.example.mystoryapp.ui.add.AddStoryActivity
+import com.example.mystoryapp.ui.maps.MapsActivity
+import com.example.mystoryapp.ui.welcome.WelcomeActivity
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
 

@@ -1,4 +1,4 @@
-package com.example.mystoryapp.viewmodel
+package com.example.mystoryapp.ui.maps
 
 import android.util.Log
 import androidx.lifecycle.LiveData

@@ -7,7 +7,7 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.mystoryapp.DetailStoryActivity
+import com.example.mystoryapp.ui.detail.DetailStoryActivity
 import com.example.mystoryapp.databinding.ItemListStoryBinding
 import com.example.mystoryapp.models.response.ListStoryItem
 
